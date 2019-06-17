@@ -6,9 +6,11 @@ import java.util.List;
 @XmlRootElement
 public class User {
 
-    String name;
-    String email;
-    List<String> roles;
+    private String name;
+    private String email;
+    private List<String> roles;
+    private String status;
+    private String message;
 
     public String getName() {
         return name;
@@ -28,4 +30,16 @@ public class User {
     public void setRoles(List<String> roles) {
         this.roles = roles;
     }
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
+	}    
 }
